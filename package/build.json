@@ -1,0 +1,24 @@
+{
+  "packages": [
+    {
+      "name": "AGMaps-Core",
+      "originalManifestFileName": "pkg_agmaps",
+      "substituteManifestFileName": "pkg_agmaps",
+      "extensions": [
+        {
+          "name": "com_agmaps",
+          "substitutes": [
+            {
+              "original": "admin/agmaps.xml",
+              "replace": "agmaps.xml"
+            },
+            {
+              "original": "admin/script.php",
+              "replace": "script.php"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

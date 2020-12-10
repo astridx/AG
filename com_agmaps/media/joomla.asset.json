@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "com_agmaps",
+  "version": "1.0.0",
+  "description": "AGMaps for Joomla CMS",
+  "license": "GPL-2.0-or-later",
+  "assets": [
+    {
+      "name": "com_agmaps.admin-agmaps-letter",
+      "type": "script",
+      "uri": "com_agmaps/admin-agmaps-letter.js",
+      "dependencies": [
+        "core"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+      "name": "com_agmaps.admin-agmaps-modal",
+      "type": "script",
+      "uri": "com_agmaps/admin-agmaps-modal.js",
+      "dependencies": [
+        "core"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    }
+  ]
+}

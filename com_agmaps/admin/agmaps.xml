@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="component" method="upgrade">
+	<name>COM_AGMAPS</name>
+	<creationDate>DP_DEPLOY_DATE</creationDate>
+	<author>Astrid Günther</author>
+	<authorEmail>info@astrid-guenther.de</authorEmail>
+	<authorUrl>www.astrid-guenther.de</authorUrl>
+	<copyright>(C) 2015 Astrid Günther. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>DP_DEPLOY_VERSION</version>
+	<description>COM_AGMAPS_XML_DESCRIPTION</description>
+	<namespace path="src">AgmapNamespace\Component\Agmaps</namespace>
+	<scriptfile>script.php</scriptfile>
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>  <!-- Runs on update -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	<!-- Frond-end files -->
+	<files folder="site">
+		<folder>language</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<!-- Back-end files -->
+	<administration>
+		<menu img="class:comment">
+			COM_AGMAPS
+			<params>
+				<dashboard>agmaps</dashboard>
+			</params>
+		</menu>
+		<submenu>
+			<menu link="option=com_agmaps">
+				COM_AGMAPS
+				<params>
+					<menu-quicktask-title>COM_AGMAPS</menu-quicktask-title>
+					<menu-quicktask>index.php?option=com_agmaps&amp;view=agmap&amp;layout=edit</menu-quicktask>
+				</params>
+			</menu>
+			<menu link="option=com_categories&amp;extension=com_agmaps"
+				view="categories" img="class:agmaps-cat" alt="Agmaps/Categories">
+				JCATEGORY
+				<params>
+					<menu-quicktask-title>JCATEGORY</menu-quicktask-title>
+					<menu-quicktask>index.php?option=com_categories&amp;view=category&amp;layout=edit&amp;extension=com_agmaps</menu-quicktask>
+				</params>
+			</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<folder>forms</folder>
+			<folder>language</folder>
+			<folder>services</folder>
+			<folder>sql</folder>
+			<folder>src</folder>
+			<folder>tmpl</folder>
+		</files>
+	</administration>
+	<api>
+		<files folder="api">
+			<folder>src</folder>
+		</files>
+	</api>
+    <media folder="media" destination="com_agmaps">
+		<folder>js</folder>
+		<folder>css</folder>
+		<filename>joomla.asset.json</filename>
+    </media>
+	<changelogurl>https://raw.githubusercontent.com/astridx/boilerplate/tutorial/changelog.xml</changelogurl>
+	<updateservers>
+		<server type="extension" name="Agmap Updates">https://raw.githubusercontent.com/astridx/boilerplate/tutorial/agmap_update.xml</server>
+	</updateservers>
+	<dlid prefix="dlid=" suffix="" />
+</extension>

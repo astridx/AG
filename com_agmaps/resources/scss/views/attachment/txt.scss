@@ -1,0 +1,20 @@
+/**
+ *
+ * @package   DPAttachments
+ * @copyright Copyright (C) 2019 Digital Peak GmbH. <https://www.digital-peak.com>
+ * @license   http://www.gnu.org/licenses/gpl.html GNU/GPL
+ */
+
+.com-dpattachments-attachment {
+	&__header {
+		padding-bottom: 10px;
+		border-bottom: 1px solid #cbcbcb;
+	}
+
+	&__content {
+		white-space: pre-wrap;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		word-break: break-all;
+	}
+}

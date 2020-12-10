@@ -1,0 +1,55 @@
+/**
+ *
+ * @package   DPAttachments
+ * @copyright Copyright (C) 2018 Digital Peak GmbH. <https://www.digital-peak.com>
+ * @license   http://www.gnu.org/licenses/gpl.html GNU/GPL
+ */
+
+.com-dpattachments-layout-attachments {
+	@import "../../block/button";
+	@import "../../block/icon";
+
+	&_empty {
+		display: none;
+	}
+
+	&__attachments {
+		display: flex;
+		flex-wrap: wrap;
+
+		@supports (display: grid) {
+			display: grid;
+			grid-gap: 10px;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+			@media (max-width: 400px) {
+				display: block;
+			}
+		}
+
+		.dp-attachment {
+			flex: 1 0 40%;
+			padding: 10px;
+			border: 1px solid #cbcbcb;
+			overflow-wrap: break-word;
+			word-wrap: break-word;
+			word-break: break-all;
+
+			@media (max-width: 400px) {
+				margin: 5px 0;
+			}
+		}
+	}
+}
+
+.dp-attachment-preview {
+	zoom: 0.60;
+	width: 99.6%;
+	height: 90vh;
+	min-height: 500px;
+	border: none;
+}
+
+.dp-attachment-modal .tingle-modal-box__content {
+	padding: 1rem;
+}

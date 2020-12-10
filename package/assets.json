@@ -1,0 +1,31 @@
+{
+  "local": [
+    {
+      "src": "com_agmaps/resources/scss/views",
+      "dest": "com_agmaps/media/css/views"
+    },
+    {
+      "src": "com_agmaps/resources/scss/layouts",
+      "dest": "com_agmaps/media/css/layouts"
+    },
+    {
+      "src": "com_agmaps/resources/js",
+      "dest": "com_agmaps/media/js"
+    }
+  ],
+  "vendor": [
+    {
+      "src": "leaflet/dist/leaflet.js",
+      "dest": "com_agmaps/media/js/leaflet/leaflet.js"
+    },
+    {
+      "src": "leaflet/dist/leaflet.css",
+      "dest": "com_agmaps/media/css/leaflet/leaflet.css"
+    },
+    {
+      "src": "leaflet/dist/images",
+      "dest": "com_agmaps/media/css/leaflet"
+    }
+  ],
+  "docBlock": "/**\n * @package    AGMap\n * @copyright  Copyright (C) Astrid Günther. <https://www.astrid-guenther.de>\n * @license    http://www.gnu.org/licenses/gpl.html GNU/GPL\n */"
+}

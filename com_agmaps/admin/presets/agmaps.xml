@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<menu
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:joomla.org"
+	xsi:schemaLocation="urn:joomla.org menu.xsd"
+	>
+	<menuitem
+		title="COM_AGMAPS"
+		type="heading"
+		icon="comment"
+		class="class:comment"
+		>
+		<menuitem
+			title="COM_AGMAPS"
+			type="component"
+			element="com_agmaps"
+			link="index.php?option=com_agmaps"
+			quicktask="index.php?option=com_agmaps&amp;view=agmap&amp;layout=edit"
+			quicktask-title="COM_AGMAPS"
+		/>
+
+		<menuitem
+			title="JCATEGORY"
+			type="component"
+			element="com_agmaps"
+			link="index.php?option=com_categories&amp;extension=com_agmaps"
+			quicktask="index.php?option=com_categories&amp;view=category&amp;layout=edit&amp;extension=com_agmaps"
+			quicktask-title="JCATEGORY"
+		/>
+	</menuitem>
+</menu>
