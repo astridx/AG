@@ -35,6 +35,9 @@ class Acceptance extends \Codeception\Module
 			if (strpos($log['message'], $this->getModule('JoomlaBrowser')->_getConfig()['url']) !== 0) {
 				continue;
 			}
+			if (strpos($log['message'], 'Cross-Origin-Opener-Policy') !== 0) {
+				continue;
+			}
 			$this->assertNotEquals('SEVERE', $log['level'], 'Some error in JavaScript: ' . json_encode($log));
 		}
 	}
