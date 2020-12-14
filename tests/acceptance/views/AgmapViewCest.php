@@ -54,7 +54,7 @@ class AgmapViewCest extends \BasicAGCestClass
 		$I->fillField(['name' => 'install_url'], 'http://web-test/joomla/AG_DP_DEPLOY_VERSION.zip');
 		$I->wait(5);
 		$I->click(['id' => 'installbutton_url']);
-		$I->wait(5);
+		$I->wait(30);
 		$I->waitForText('PKG_AG_XML_DESCRIPTION', 1);
 		//Installation of the package was successful.
 
