@@ -1,9 +1,9 @@
 {
   "packages": [
     {
-      "name": "AGMaps-Core",
-      "originalManifestFileName": "pkg_agmaps",
-      "substituteManifestFileName": "pkg_agmaps",
+      "name": "AG",
+      "originalManifestFileName": "pkg_ag",
+      "substituteManifestFileName": "pkg_ag",
       "extensions": [
         {
           "name": "com_agmaps",

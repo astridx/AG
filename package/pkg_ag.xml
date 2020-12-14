@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension type="package" method="upgrade">
 	<name>AG</name>
-	<packagename>agmaps</packagename>
+	<packagename>ag</packagename>
 	<creationDate>DP_DEPLOY_DATE</creationDate>
 	<packager>Astrid Günther</packager>
 	<copyright>(C) 2015 Astrid Günther. All rights reserved.</copyright>

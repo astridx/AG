@@ -9,7 +9,7 @@ class Ag extends \AcceptanceTester
 
 namespace Step\Acceptance;
 
-class Agmap extends \AcceptanceTester
+class Ag extends \AcceptanceTester
 {
 	private $user = null;
 
