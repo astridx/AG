@@ -13,7 +13,7 @@ class AgmapViewCest extends \BasicAGCestClass
 	{
 		$I->wantToTest('that joomla is installed correcly and I can open the front end.');
 
-		$I->amOnUrl('http://web-test/joomla');
+		$I->amOnUrl('http://web-test/joomla4');
 
 		$I->see('Home');
 	}
@@ -22,7 +22,7 @@ class AgmapViewCest extends \BasicAGCestClass
 	{
 		$I->wantToTest('that I can intall all agmap extensions.');
 
-		$I->amOnUrl('http://web-test/joomla/administrator');
+		$I->amOnUrl('http://web-test/joomla4/administrator');
 
 
 		$I->see('Joomla Administrator Login');
@@ -51,7 +51,7 @@ class AgmapViewCest extends \BasicAGCestClass
 
 		$I->wait(5);
 		//$I->fillField(['name' => 'install_directory'], '/home/astrid/git/DPDocker/DPDocker/build/dist/AG_DP_DEPLOY_VERSION.zip');
-		$I->fillField(['name' => 'install_url'], 'http://web-test/joomla/AG_DP_DEPLOY_VERSION.zip');
+		$I->fillField(['name' => 'install_url'], 'http://web-test/joomla4/AG_1_0.zip');
 		$I->wait(5);
 		$I->click(['id' => 'installbutton_url']);
 		$I->wait(30);
